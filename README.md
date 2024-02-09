@@ -1,7 +1,34 @@
-# Tauri + Svelte + Typescript
+# Dev Buddy
 
-This template should help get you started developing with Tauri, Svelte and TypeScript in Vite.
+## A simple yet powerful buddy with a bunch of tools to make your life easy as a developer
 
-## Recommended IDE Setup
+### Features
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
+- A very simple interface for you to get your work done
+- A bunch of dev-specific tools that just work
+- Multi-platform apps for Windows, Mac, and Linux
+- Everything runs locally, so your data is safe
+
+### Roadmap
+
+- [ ] UUID 4 Generator
+- [ ] Hash Generator
+- [ ] String Inspector
+- [ ] URL parser
+- [ ] Random string generator
+- [ ] JSON formatter
+- [ ] XML formatter
+- [ ] JS formatter
+- [ ] CSS formatter
+- [ ] JWT Debugger
+- [ ] Cron job parser
+- [ ] Cron job generator
+- [ ] Lorem Ipsum generator
+- [ ] Fake data generator
+- [ ] Number base converter
+- [ ] Unix time converter
+- [ ] Curl to code
+- [ ] QR Code generator
+- [ ] Base64 encoder/decoder
+- [ ] Regex tester
+- [ ] JSON to YAML converter
