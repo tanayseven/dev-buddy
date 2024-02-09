@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Greet from './components/Refresh.svelte'
+  import Greet from './tools/generators/UuidGenerator.svelte'
 </script>
 
 <main class="container">
