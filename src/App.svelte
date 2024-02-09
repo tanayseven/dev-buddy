@@ -1,11 +1,11 @@
 <script lang="ts">
-  import Greet from './tools/generators/UuidGenerator.svelte'
+  import UuidGenerator from './tools/generators/UuidGenerator.svelte'
 </script>
 
 <main class="container">
 
   <div class="row">
-    <Greet />
+    <UuidGenerator />
   </div>
 
 

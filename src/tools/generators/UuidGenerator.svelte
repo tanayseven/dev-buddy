@@ -23,10 +23,10 @@
   }
 
   const separators = {
-    ",": "Comma separated",
-    "\n": "New line separated",
-    "\t": "Tab separated",
-    " ": "Space separated",
+    ",": "',' Comma separated",
+    "\n": "'\\n' New line separated",
+    "\t": "'\\t' Tab separated",
+    " ": "' ' Space separated",
   }
 
   uuid = generateUuids(numberOfUuids)
@@ -35,8 +35,8 @@
 <div>
   <input type="number" bind:value={numberOfUuids} on:keyup={refreshUuid}>
   <select bind:value={selectedSeparator} on:change={refreshUuid}>
-    {#each Object.entries(separators) as [key, value]}
-      <option value={key} selected={selectedSeparator === key}>{key} {value}</option>
+    {#each Object.entries(separators) as [key, description]}
+      <option value={key} selected={selectedSeparator === key}>{description}</option>
     {/each}
   </select>
   <textarea disabled>{uuid}</textarea><br >
