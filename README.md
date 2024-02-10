@@ -11,7 +11,7 @@
 
 ### Roadmap
 
-- [ ] UUID 4 Generator
+- [X] UUID 4 Generator
 - [ ] Hash Generator
 - [ ] String Inspector
 - [ ] URL parser

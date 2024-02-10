@@ -19,7 +19,7 @@
         // Your monaco instance is ready, let's display some code!
         editor = monaco.editor.create(
             editorContainer,
-            {readOnly}
+            {readOnly, wordWrap: 'on'}
         );
         model = monaco.editor.createModel(
             content,
@@ -47,3 +47,11 @@
 </script>
 
 <div class="monaco-editor" bind:this={editorContainer} />
+
+<style>
+    .monaco-editor {
+        width: 100%;
+        height: 500px;
+    }
+
+</style>

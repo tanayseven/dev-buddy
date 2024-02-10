@@ -31,6 +31,7 @@
 </script>
 
 <div>
+  <h1>UUID 4 Generator</h1>
   <input type="number" bind:value={numberOfUuids} on:keyup={refreshUuid} on:change={refreshUuid}>
   <select bind:value={selectedSeparator} on:change={refreshUuid}>
     {#each Object.entries(separators) as [key, description]}
