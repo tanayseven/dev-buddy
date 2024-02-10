@@ -1,5 +1,7 @@
 <script lang="ts">
   import {v4 as uuidv4} from 'uuid'
+  import CopyButton from "../../components/CopyButton.svelte"
+  import MonacoEditor from "../../components/MonacoEditor.svelte"
 
   let numberOfUuids = 1
   let selectedSeparator = ","
@@ -18,10 +20,6 @@
     uuid = generateUuids(numberOfUuids)
   }
 
-  const copy = async () => {
-    await navigator.clipboard.writeText(uuid)
-  }
-
   const separators = {
     ",": "',' Comma separated",
     "\n": "'\\n' New line separated",
@@ -33,13 +31,13 @@
 </script>
 
 <div>
-  <input type="number" bind:value={numberOfUuids} on:keyup={refreshUuid}>
+  <input type="number" bind:value={numberOfUuids} on:keyup={refreshUuid} on:change={refreshUuid}>
   <select bind:value={selectedSeparator} on:change={refreshUuid}>
     {#each Object.entries(separators) as [key, description]}
       <option value={key} selected={selectedSeparator === key}>{description}</option>
     {/each}
   </select>
-  <textarea disabled>{uuid}</textarea><br >
+  <MonacoEditor bind:content={uuid} language="plaintext" readOnly />
   <input type="button" on:click={refreshUuid} value="Refresh">
-  <input type="button" on:click={copy} value="Copy">
+  <CopyButton bind:text={uuid} />
 </div>

@@ -3,12 +3,9 @@
 </script>
 
 <main class="container">
-
   <div class="row">
     <UuidGenerator />
   </div>
-
-
 </main>
 
 <style>
