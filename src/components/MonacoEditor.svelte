@@ -19,7 +19,7 @@
         // Your monaco instance is ready, let's display some code!
         editor = monaco.editor.create(
             editorContainer,
-            {readOnly, wordWrap: 'on'}
+            {readOnly, wordWrap: 'on', minimap: {enabled: false}}
         );
         model = monaco.editor.createModel(
             content,
